@@ -26,6 +26,16 @@ gzip -d < data/datasets/sample.gz > data/datasets/commoncrawl.sample.jsonl
 ```
 This results with a 'commoncrawl.sample.jsonl' file in the 'data/preprocessed_data' directory.
 
+Further, for a WDC subfolder(00):
+```bash
+cd data/datasets
+wget http://data.dws.informatik.uni-mannheim.de/webtables/2015-07/englishCorpus/compressed/00.tar.gz -P ./
+tar -xvf 00.tar.gz     # results a '00.tar' file
+tar -xvf 00.tar        # results a './0/' folder, having 1M single json files
+cat ./0/*.json > ./wdc00.jsonl   # may not work, use python then
+python -m preprocess.common_crawl --worker_num 10 --input_file ./data/datasets/wdc00/0-0.jsonl --output_file ./data/preprocessed_data/wdc00-0.jsonl
+```
+
 ### Wiki Table (Common Crawl)
 Refer to this [website](https://dumps.wikimedia.org/enwiki/) for the latest dump.
 More details lies in the 'scripts/extract_wiki_tables.sh'.
