@@ -1,0 +1,11 @@
+/table_bert.egg-info
+/models
+nsm/__pycache__
+nsm/execution/__pycache__
+nsm/parser_module/__pycache__
+nsm/sketch/__pycache__
+runs
+table/__pycache__
+table/wtq/__pycache__
+table_bert/__pycache__
+table_bert/vertical/__pycache__
