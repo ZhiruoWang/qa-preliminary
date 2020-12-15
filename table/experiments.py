@@ -720,7 +720,7 @@ def to_decode_results_dict(decode_results, test_envs):
 
         env_result = {
             'name': env.name,
-            'question': ' '.join(str(x) for x in env.context['original_tokens']),
+            'question': ' '.join(str(x) for x in env.context['question_tokens']),
             'table': table,
             'hypotheses': None
         }
