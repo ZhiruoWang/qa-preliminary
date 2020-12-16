@@ -14,6 +14,12 @@ wget http://www.cs.cmu.edu/~pengchey/pytorch_nsm.zip
 unzip pytorch_nsm.zip -d data
 ```
 
+Install necessary python libraries
+```bash
+pip install -r preprocess/requirements.txt
+python -m spacy download en_core_web_sm
+```
+
 
 ## Pre-Training Data
 ### Web Tables (WDC)
