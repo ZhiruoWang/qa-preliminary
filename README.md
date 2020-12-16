@@ -77,5 +77,5 @@ Current Results:
 | Model | Dev. Acc. | Test Acc. |
 | :---: | :-------: | :-------: |
 | Vanilla BERT | 47.19 / 64.85 | 47.86 / 61.19 |
-| TaBERT (k=1) | 48.64 / 66.23 | 48.20 / 61.53 |
-| TaBERT (k=3) | xx.xx / xx.xx | xx.xx / xx.xx |
+| TaBERT (k=1) | --.-- / --.-- | 48.20 / 61.53 |
+| TaBERT (k=3) | --.-- / --.-- | 49.68 / 62.62 |
